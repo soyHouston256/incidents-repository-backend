@@ -13,7 +13,7 @@ export class AnswerRepository {
         province: dto.province,
         district: dto.district,
         gender: dto.gender,
-        kindBusiness: dto.kindBusiness,
+        kindBussines: dto.kindBussines,
         explain: dto.explain,
         date: dto.date,
       },

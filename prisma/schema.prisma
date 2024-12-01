@@ -15,7 +15,7 @@ datasource db {
 model Answer {
   id Int @default(autoincrement()) @id
   region String
-  provice String
+  province String
   district String
   gender String?
   kindBussines String?

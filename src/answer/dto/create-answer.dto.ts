@@ -4,7 +4,7 @@ export class CreateAnswerDto {
   province: string;
   district: string;
   gender?: string;
-  kindBusiness?: string;
+  kindBussines?: string;
   explain?: string;
   date?: string;
 

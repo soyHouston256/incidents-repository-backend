@@ -1,11 +1,14 @@
 import { Injectable } from '@nestjs/common';
 import { CreateAnswerDto } from './dto/create-answer.dto';
 import { UpdateAnswerDto } from './dto/update-answer.dto';
+import { AnswerRepository } from './answer.repository';
 
 @Injectable()
 export class AnswerService {
+  constructor(private readonly answerRepository: AnswerRepository) {}
   create(createAnswerDto: CreateAnswerDto) {
-    return `This action adds a new answer ${JSON.stringify(createAnswerDto)}`;
+    //return `This action adds a new answer ${JSON.stringify(createAnswerDto)}`;
+    return this.answerRepository.create(createAnswerDto);
   }
 
   findAll() {
