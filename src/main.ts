@@ -12,6 +12,7 @@ async function bootstrap() {
       configService.get('FRONTEND_URL_EXTEND'),
       'http://localhost:3000',
     ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     credentials: true,
   });
   const port = configService.get('PORT') || 3000;
