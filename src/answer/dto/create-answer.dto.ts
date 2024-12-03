@@ -7,6 +7,7 @@ export class CreateAnswerDto {
   kindBussines?: string;
   explain?: string;
   date?: string;
+  report?: string;
 
   constructor(data: Partial<CreateAnswerDto>) {
     Object.assign(this, data);

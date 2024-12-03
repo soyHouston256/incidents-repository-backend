@@ -16,6 +16,7 @@ export class AnswerRepository {
         kindBussines: dto.kindBussines,
         explain: dto.explain,
         date: dto.date,
+        report: dto.report,
       },
     });
   }
